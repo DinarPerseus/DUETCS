@@ -68,5 +68,11 @@ dependencies {
     implementation (libs.androidx.room.ktx)
 
 
+    implementation (libs.androidx.animation)
+    implementation (libs.ui)
+    implementation (libs.androidx.animation.v150)
+    implementation (libs.androidx.material.v150)
+
+
 
 }

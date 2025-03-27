@@ -8,11 +8,10 @@ import androidx.navigation.compose.rememberNavController
 import com.example.duetcs.BottomNavigationBar
 import com.example.duetcs.about.About
 import com.example.duetcs.contributor.Contributor
-import com.example.duetcs.panels.PanelViewModel
-import com.example.duetcs.panels.Panels
+import com.example.duetcs.panels.Show_Panels_list
 
 @Composable
-fun MainScreen(viewModel: PanelViewModel) {
+fun MainScreen() {
     val navController = rememberNavController()
 
 
@@ -22,7 +21,7 @@ fun MainScreen(viewModel: PanelViewModel) {
         NavHost(navController, startDestination = "about", Modifier.padding(paddingValues)) {
 
             composable("about") { About() }
-            composable("panels") { Panels(viewModel) }
+            composable("panels") { Show_Panels_list () }
             composable("contributor") { Contributor() }
 
         }

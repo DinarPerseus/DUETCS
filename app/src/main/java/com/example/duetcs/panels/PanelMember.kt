@@ -1,16 +1,14 @@
 package com.example.duetcs.panels
 
-import androidx.room.Entity
-import androidx.room.PrimaryKey
-
-@Entity(tableName = "panel_members")
 data class PanelMember(
-    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    val designation: String,
     val name: String,
+    val studentID: String,
+    val series: String,
     val phone: String,
     val email: String,
-    val role: String,
-    val currentDesignation: String,
-    val series: String
+    val currentDesignation: String = "", // Optional
+    val photoUrl: String = "" // Optional
 
 )
+
