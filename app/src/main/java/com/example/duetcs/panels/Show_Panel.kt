@@ -62,6 +62,7 @@ import androidx.compose.ui.unit.sp
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.animateDp
 import androidx.compose.animation.core.updateTransition
 import androidx.compose.foundation.Image
@@ -239,6 +240,7 @@ fun PanelTopAppBar(
 
 @Composable
 fun Show_Panel(panel: Panel) {
+
     var searchText by remember { mutableStateOf("") }
     var isSearchVisible by remember { mutableStateOf(false) }
 
